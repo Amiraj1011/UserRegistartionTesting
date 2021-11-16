@@ -23,5 +23,20 @@ namespace ExceptionTest
             //comparing actual and expected value
             Assert.AreEqual(expected, actual);
         }
+        [TestMethod]
+        public void ValidLastNameOfUser()
+        {
+            //AAA method
+            //Arrange
+            string lastName = "amir";
+            string expected = "invalid";
+
+            //Act
+            string actual = RegularExpression.LastNameNameValid(lastName);
+
+            //Assert
+            //comparing actual and expected value
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
