@@ -91,7 +91,8 @@ namespace RegularExpression00
         {
             //Regular expression of password
             //Rule 1 : minimum 8 charactors
-            string password = "^[a-zA-Z]{8}$";
+            //Rule 2 : atleast 1 uppercase
+            string password = "^(?=.*[A-Z])[a-zA-Z0-9]{8,}$";
             Regex regex = new Regex(password);
 
             if (regex.IsMatch(name))
