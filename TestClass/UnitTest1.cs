@@ -38,5 +38,20 @@ namespace ExceptionTest
             //comparing actual and expected value
             Assert.AreEqual(expected, actual);
         }
+        [TestMethod]
+        public void ValidEmailIdOfUser()
+        {
+            //AAA method
+            //Arrange
+            string emailId = " ";
+            string expected = "invalid";
+
+            //Act
+            string actual = RegularExpression.EmailValid(emailId);
+
+            //Assert
+            //comparing actual and expected value
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
